@@ -3,12 +3,12 @@
 class Prodotto {
   public $nome;
   public $prezzo;
-  public $marca;
+  public $categoria;
 
-  function __construct($_nome, $_prezzo, $_marca){
+  function __construct($_nome, $_prezzo, $_categoria){
     $this->nome = $_nome;
     $this->prezzo = $_prezzo;
-    $this->marca = $_marca;
+    $this->categoria = $_categoria;
   }
 
   public function getNome(){
