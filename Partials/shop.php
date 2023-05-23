@@ -11,10 +11,10 @@ require_once __DIR__ . '/../Data/db.php';
     <div class="card-body">
       <h4 class="card-title"> <?php echo $prod -> nome ?></h4>
       <h5 class="card-text"><?php echo $prod -> categoria ?></h5>
-      <?php if($prod -> peso) : ?>
+      <?php if(isset($prod -> peso)) : ?>
       <h5 class="card-text"><?php echo $prod -> peso ?></h5>
       <?php endif; ?>
-      <?php if($prod -> materiale) : ?>
+      <?php if(isset($prod -> materiale)) : ?>
       <h5 class="card-text"><?php echo $prod -> materiale ?></h5>
       <?php endif; ?>
       <h5 class="card-text"><?php echo $prod -> prezzo ?></h5>

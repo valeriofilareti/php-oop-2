@@ -6,5 +6,6 @@ class cibo extends prodotto {
 
   function __construct($_img, $_nome, $_prezzo, $_categoria, $_peso){
     parent::__construct($_img, $_nome, $_prezzo, $_categoria);
+    $this->peso = $_peso;
   }
 }

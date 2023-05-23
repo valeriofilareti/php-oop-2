@@ -6,5 +6,6 @@ class giochi extends prodotto {
 
   function __construct($_img, $_nome, $_prezzo, $_categoria, $_materiale){
     parent::__construct($_img, $_nome, $_prezzo, $_categoria);
+    $this->materiale = $_materiale;
   }
 }
