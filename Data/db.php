@@ -4,10 +4,13 @@ require_once __DIR__ . '/../Models/prodotto.php';
 require_once __DIR__ . '/../Models/giochi.php';
 require_once __DIR__ . '/../Models/cibo.php';
 
+$prods = [
 
+  $croccantini = new cibo('img', 'croccantini', '10', 'cane', '1kg'),
+  $scatoletta = new cibo('img','scatoletta', '13', 'cane', '1.5kg'),
+  $topo = new giochi('img', 'Topo di Gomma', '3.50', 'gatto', 'gomma'),
 
-  $prod1 = new prodotto('prod1', '10', 'cane');
-  $prod2 = new giochi('prod2', '13', 'cane', 'gomma');
-  $prod3 = new cibo('prod3', '18', 'gatto', '1kg');
+]
 
+?>
 
